@@ -3798,6 +3798,29 @@ textarea.form-control-lg {
   position: static;
 }
 
+/* MOVIDO POR JOHAN  ELEMENTOS NAVBAR*/
+
+.navbar-itemslista {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  white-space: nowrap;
+}
+
+.navbar-itemslista .btn,
+.navbar-itemslista .nav-link {
+  margin-right: 4rem; /* Espacio entre el botón y el enlace */
+}
+
+.navbar-itemslista .btn {
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+/* MOVIDO POR JOHAN  ELEMENTOS NAVBAR*/
+
+
+
 .navbar-text {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -10909,6 +10932,8 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  white-space: nowrap;
+
 }
 #mainNav .navbar-nav li.nav-item a.nav-link > img.imgprofile {
 width: 60px;
@@ -10979,19 +11004,32 @@ width: 60px;
   color: #6c757d;
 }
 
-.masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
+/* BANNER */
+
+.banner-background {
+  position: relative;
+  width: 100%; /* Abarca todo el ancho de su contenedor */
+  height: 100vh; /* Toma toda la altura de la ventana del navegador */
 }
-.masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+
+.mastbanner1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen dentro del contenedor sin recortarla */
+  z-index: 1; /* Asegura que la imagen esté por encima del fondo */
 }
-.masthead .masthead-subheading {
-  font-size: 1.25rem;
-}
-.masthead .masthead-avatar {
-  width: 15rem;
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+  z-index: 0; /* Asegura que el fondo esté detrás de la imagen */
 }
 
 @media (min-width: 992px) {
@@ -10999,14 +11037,12 @@ width: 60px;
     padding-top: calc(6rem + 104px);
     padding-bottom: 6rem;
   }
-  .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.5rem;
-  }
 }
+
+
+
+
+/* BANNER */
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
