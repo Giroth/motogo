@@ -63,7 +63,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #0080ff;
-  --bs-body-bg: #fff;
+  --bs-body-bg: #404040;
   --bs-border-width: 0.125rem;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -10930,6 +10930,7 @@ html {
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
+  
 }
 
 
@@ -10939,7 +10940,13 @@ html {
   flex-direction: column;
   align-items: center;
   white-space: nowrap;
-  margin-left: auto; /* Mueve el ancla hacia la derecha */
+  left: 50px;
+  position: relative;
+}
+
+
+.imgprofile, .iniciarsesion{  
+  margin-bottom: 0;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link > img.imgprofile {
@@ -11013,18 +11020,15 @@ html {
 /* BANNER */
 .banner-background {
   position: relative;
-  width: 100vw; 
-  height: 100vh;
-  overflow: hidden; 
+  width: 100vw;
+  height: 50vw;
+  overflow: hidden;
+  margin-bottom: 0;
 }
 .mastbanner1 {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
-  z-index: 1; 
+  object-fit: cover;
 }
 .masthead {
   padding-top: calc(4rem + 104px); 
@@ -11034,9 +11038,60 @@ html {
 }
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(2rem + 104px);
+    padding-top: 0;
   }
 }
+
+/* Estilos para los botones de flecha */
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%; /* Centra verticalmente el botón */
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 80px; /* Ajusta el tamaño según sea necesario */
+  height: 80px; /* Ajusta el tamaño según sea necesario */
+  background-color: transparent; /* Fondo transparente */
+  border: none;
+  color: white; /* Color del icono (flecha) */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+/* Estilos para la flecha izquierda */
+.slick-prev {
+  left: 50px; /* Ajusta la distancia desde el borde izquierdo */
+
+}
+
+/* Estilos para la flecha derecha */
+.slick-next {
+  right: 50px; /* Ajusta la distancia desde el borde derecho */
+
+}
+.slick-prev::before {
+  content: ''; /* Asegúrate de limpiar cualquier contenido anterior */
+  background: url('/assets/left.svg') no-repeat; /* Ruta de la imagen de la flecha izquierda */
+  width: 80px;  
+
+}
+/* Estilos para el botón de flecha derecha */
+.slick-next::before {
+  content: ''; /* Asegúrate de limpiar cualquier contenido anterior */
+  background: url('/assets/right.svg') no-repeat; /* Ruta de la imagen de la flecha izquierda */
+  width: 80px;  
+}
+.slick-arrow{
+font-size: 0;
+}
+.slick-prev::before, .slick-next::before {
+  content: ''; /* Asegúrate de limpiar cualquier contenido anterior */
+  background-size: contain; /* Ajusta el tamaño de la imagen para que quepa dentro del botón */
+  width: 100%; /* Ajusta el ancho según sea necesario */
+  height: 100%; /* Ajusta la altura según sea necesario */
+  display: inline-block; /* Permite aplicar dimensiones al pseudo-elemento */
+}
+
+/* Estilos para el botón de flecha izquierda */
+
+
 
 /* BANNER */
 
@@ -11084,6 +11139,7 @@ html {
   padding-bottom: 5rem;
   background-color: #404040;
   color: #fff;
+  margin-top: 0;
 }
 
 .copyright {
