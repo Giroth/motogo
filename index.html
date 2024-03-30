@@ -47,7 +47,7 @@
                         <li class="nav-item mx-0 mx-lg-1">
                             <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" id="prueba">
                                 <img src="assets/img/noprofile.png" class="imgprofile">
-                                <p class="iniciarsesion">Iniciar Sesion</p>
+                                <p class="iniciarsesion" id="login-link">Iniciar Sesion</p>
                             </a>
                         </div>
                         </li>
@@ -69,6 +69,54 @@
         </header>
         
        
+<section>
+    <div id="login">
+        <h3 class="text-center text-white pt-5">¡Bienvenido!</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h3 class="text-center text-info">Login</h3>
+                            <div class="form-group">
+                                <br>
+                                <input type="text" name="username" id="username" class="form-control" placeholder="Ingrese su correo">
+                            </div>
+                            <div class="form-group">
+                                <br>
+                                <input type="text" name="password" id="password" class="form-control" placeholder="Contraseña">
+                                <a href="#" class="contraseñaOlvidada text-info">¿Ha olvidado su contraseña?</a>
+                            </div>
+                            <div class="form-group d-flex justify-content-between align-items-center">
+                                <div id="register-submit-container" class="position-relative">
+                                    <a href="#" class="text-info" id="register-link">Crear cuenta</a>
+                                    <div id="register-option" class="position-absolute bg-white p-3" style="display: none; top: 100%; left: 0; width: 200px;">
+                                        <ul class="list-unstyled mb-0 opcionregistro">
+                                            <li><a href="#" class="opcionregistro">Registrar persona</a></li>
+                                            <li><a href="#" class="opcionregistro">Registrar empresa</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <input type="submit" name="submit" class="btn btn-info btn-md btn-submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+</section>
+
+
+
+
+
+
+
+
 
         <!-- Footer-->
         <footer class="footer text-center">

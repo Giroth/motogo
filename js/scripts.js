@@ -57,4 +57,40 @@ window.addEventListener('DOMContentLoaded', event => {
         $('.carrusel').slick();
       });
       
+      $(document).ready(function(){
+        $("#register-link").click(function(){
+            $("#register-option").toggle();
+        });
+    });
+
+    function toggleLoginForm(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+        var loginForm = document.getElementById('login');
+        if (loginForm.style.display === 'none' || loginForm.style.display === '') {
+            loginForm.style.display = 'block'; // Mostrar el formulario
+        } else {
+            loginForm.style.display = 'none'; // Ocultar el formulario
+        }
+    } 
+
+    function hideLoginFormOnClickOutside(event) {
+        var loginForm = document.getElementById('login');
+        if (event.target !== loginForm && !loginForm.contains(event.target)) {
+            loginForm.style.display = 'none'; // Ocultar el formulario
+        }
+    }
+
+    
+    
+    document.getElementById('login-link').addEventListener('click', function(event) {
+        toggleLoginForm(event);
+        setTimeout(function() {
+            document.addEventListener('click', closeLoginFormOnClickOverlay);
+        }, 0);
+    });
+
+    // Evento para cerrar el formulario al hacer clic en el overlay transparente
+    document.addEventListener('click', closeLoginFormOnClickOverlay);
+    document.getElementById('login-link').addEventListener('click', toggleLoginForm);
+
 });
