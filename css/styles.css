@@ -10979,20 +10979,33 @@ html {
   background-color: #f0f0f0;
 }
 
+.cerrarLogin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top:105px;
+  margin-right: 300px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: url(/assets/close.png);
+  font: 0;
+}
+
 #login {
   display: none; /* Ocultar el formulario de inicio de sesión por defecto */
   position: fixed; /* Fijar el formulario en la pantalla */
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
   z-index: 9999; /* Colocar el formulario por encima del contenido */
 }
 
 #login h3 {
   margin: 0;
-  flex: 1;
 }
 
 #login .text-center{
@@ -11001,12 +11014,13 @@ html {
 
 #login > .text-white{
   font-size: 120px;
-  margin-left: 90px ;
-  margin-right: 0;
-  padding-right: 0;
+
   }
 
 #login .container #login-row #login-column #login-box {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
     margin-top: 120px;
     max-width: 600px;
     height: 320px;
@@ -11047,6 +11061,7 @@ html {
 #register-link {
     float: left; /* Mueve el enlace "Register here" a la izquierda */
   }
+
 
     
 /* LOGIN */

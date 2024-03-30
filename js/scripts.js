@@ -54,7 +54,11 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
     $(document).ready(function(){
-        $('.carrusel').slick();
+        $('.carrusel').slick({
+autoplay: true,
+autoplaySpeed: 2000,
+isFinite: true
+        });
       });
       
       $(document).ready(function(){
@@ -63,6 +67,8 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+
+    // Función para mostrar y ocultar el formulario de inicio de sesión
     function toggleLoginForm(event) {
         event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
         var loginForm = document.getElementById('login');
@@ -71,26 +77,17 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             loginForm.style.display = 'none'; // Ocultar el formulario
         }
-    } 
-
-    function hideLoginFormOnClickOutside(event) {
-        var loginForm = document.getElementById('login');
-        if (event.target !== loginForm && !loginForm.contains(event.target)) {
-            loginForm.style.display = 'none'; // Ocultar el formulario
-        }
     }
 
-    
-    
-    document.getElementById('login-link').addEventListener('click', function(event) {
-        toggleLoginForm(event);
-        setTimeout(function() {
-            document.addEventListener('click', closeLoginFormOnClickOverlay);
-        }, 0);
-    });
+    function ocultarLoginForm(event) {
+        event.preventDefault(); // Evitar el comportamiento predeterminado del botón
+        var loginForm = document.getElementById('login');
+        loginForm.style.display = 'none'; // Ocultar el formulario
+    }
 
-    // Evento para cerrar el formulario al hacer clic en el overlay transparente
-    document.addEventListener('click', closeLoginFormOnClickOverlay);
+    // Mostrar u ocultar el formulario al hacer clic en el enlace "Iniciar Sesión"
     document.getElementById('login-link').addEventListener('click', toggleLoginForm);
+
+    document.querySelector('.cerrarLogin').addEventListener('click', ocultarLoginForm);
 
 });
