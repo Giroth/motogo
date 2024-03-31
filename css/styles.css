@@ -10989,8 +10989,7 @@ html {
   height: 50px;
   background-color: transparent;
   border-color: transparent;
-  background-image: url(/assets/close.png);
-  font: 0;
+  background-image: url(/assets/close.png); 
 }
 
 #login {
