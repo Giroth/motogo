@@ -15,16 +15,16 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="/css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
       
      
     </head>
-    <body id="page-top">
+    <body id="page-top-reserva-nologin">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"> <img src="assets/Logo/motogo2.png" class="navbar-logo"> </a>
+                <a class="navbar-brand" href="/"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -41,12 +41,12 @@
                             <input type="datetime" name="" id="" placeholder="Hora" class="form-control itemlista" id="hora">
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-light itemlista" onclick="window.location.href='Paginas/VerReserva/VerReservaNoLogin.html'"> Mis Reservas </button>
+                            <button class="btn btn-light itemlista" disabled> Mis Reservas </button>
                         </li>
                         <div class="wrapprueba"|>
                         <li class="nav-item mx-0 mx-lg-1">
                             <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" id="prueba">
-                                <img src="assets/img/noprofile.png" class="imgprofile">
+                                <img src="/assets/img/noprofile.png" class="imgprofile">
                                 <p class="iniciarsesion" id="login-link">Iniciar Sesion</p>
                             </a>
                         </div>
@@ -57,16 +57,37 @@
         </nav>
         <!-- Masthead-->
 
-
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <div class="banner-background carrusel">
-                    <div><img src="assets/img/banner1.jpg" class="mastbanner1"></div>
-                    <div><img src="assets/img/banner2.jpg" class="mastbanner1"></div>
+        <main class="my-form">
+            <div class="card container mt-10">
+                <div class="card-header text-center"> Consulta tu reserva</div>
+                <div class="enunciado text-center">
+                    <div>
+                        <label for="label" class="col-form-label">Introduce tu numero de documento y codigo de reserva </label>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="label" class="col-form-label">Numero de documento</label>
+                                <input type="text" id="correo" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="label" class="col-form-label">Codigo de reserva</label>
+                                <input type="text" id="confirmar_correo" class="form-control">
+               
+                                <button type="submit" class="btn nologinbtn btn-primary mt-2 align-right">Consultar</button>
+                            </div>
+                        </div>
+                    </div>
+               
                 </div>
             </div>
-        </header>
-        
+        </main>
        
 <section>
     <div id="login">
@@ -154,14 +175,14 @@ Somos una empresa de intermediación que colabora con una amplia red de proveedo
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="/js/scripts.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        
        
 
     </body>
