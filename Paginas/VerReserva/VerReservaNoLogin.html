@@ -33,12 +33,19 @@
                     <ul class="navbar-nav ms-auto navbar-itemslista">
                         <li class="nav-item">
                             <input type="text" placeholder="Local de retirada" class="form-control itemlista" id="busquedalocal">
+                            <div class="custom-dropdown-content" id="custom-dropdown-content">
+                                <label for="fechaEntrega" style="color: black;">Fecha de entrega:</label>
+                                <input type="date" id="fechaEntrega" class="custom-dropdown-input">
+                                
+                                <input type="time" id="fechaDevolucion" class="custom-dropdown-input">
+                                <button class="btn btn-primary custom-dropdown-button ">Solicitar</button>
+                            </div>
                         </li>     
                         <li class="nav-item">
                             <input type="date" name="" id="" class="form-control itemlista" placeholder="Fecha de retirada" id="fecharetirada">
                         </li>
                         <li class="nav-item">
-                            <input type="datetime" name="" id="" placeholder="Hora" class="form-control itemlista" id="hora">
+                            <input type="time" name="" id="" placeholder="Hora" class="form-control itemlista" id="hora">
                         </li>
                         <li class="nav-item">
                             <button class="btn btn-light itemlista" disabled> Mis Reservas </button>

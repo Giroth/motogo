@@ -180,5 +180,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.getElementById('busquedalocal').addEventListener('focus', function() {
+    document.getElementById('custom-dropdown-content').style.display = 'block';
+});
+document.getElementById('busquedalocal').addEventListener('blur', function() {
+    document.getElementById('custom-dropdown-content').style.display = 'none';
+});
+
 
 
