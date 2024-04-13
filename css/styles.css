@@ -35,7 +35,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #1abc9c;
-  --bs-secondary: #F88000;
+  --bs-secondary: #F88000; /* NARANJA GENERAL*/
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -11144,6 +11144,90 @@ background-color: white !important;
 
 }
 
+/* ALQUILER PASO1 */
+
+.visibilidad-info-vehiculo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Añade esta línea si quieres que las columnas estén una encima de la otra */
+}
+
+.imagen-vehiculo{
+
+  padding: 8%;
+  border-radius: 10px;
+
+}
+.card-title{
+text-align: center;
+}
+.title-container {
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container a {
+  position: absolute;
+  right: 10%;
+  height: 50%;
+  transform: translateY(-50%);
+}
+
+.title-vehiculo{
+
+font-size: 22px;
+
+}
+
+
+.card-padre-vehiculos{
+  width: 70%;
+
+  
+}
+
+.card-vehiculo {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: var(--bs-card-border-radius);
+}
+
+
+.contenedor-opciones-vehiculo {
+  display: flex;
+  justify-content: center; /* Añade esta línea */
+  align-items: center;
+  gap: 10%;
+  margin-bottom: 2%;
+}
+
+
+.boton-reserva{
+background-color: #F88000;
+border-color: #F88000;
+}
+.informacion-vehiculo{
+color: #F88000;
+
+}
+
+.visibilidad-info-vehiculo, .visibilidad-info-vehiculoR{
+
+  display: none;
+  
+  }
+
+/* ALQUILER PASO1 */
 
 /* RESERVA NOLOGIN */
 

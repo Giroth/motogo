@@ -183,9 +183,110 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('busquedalocal').addEventListener('focus', function() {
     document.getElementById('custom-dropdown-content').style.display = 'block';
 });
-document.getElementById('busquedalocal').addEventListener('blur', function() {
-    document.getElementById('custom-dropdown-content').style.display = 'none';
+
+
+let clicks = 0;
+let timer = null;
+
+// Función para manejar los clics rápidos
+function handleClicks() {
+    clicks++;
+    if (clicks === 1) {
+        // Iniciar el temporizador para reiniciar los clics
+        timer = setTimeout(() => {
+            clicks = 0;
+        }, 650); // Establecer el tiempo límite entre clics rápidos
+    } else if (clicks === 3) {
+        // Si se alcanzan los tres clics rápidos, ocultar el menú desplegable
+        document.getElementById('custom-dropdown-content').style.display = 'none';
+        clicks = 0;
+        clearTimeout(timer); // Limpiar el temporizador
+    }
+}
+
+// Manejar los clics en el documento
+document.addEventListener('click', function(event) {
+    // Verificar si el clic no ocurrió dentro del menú desplegable
+    if (!document.getElementById('custom-dropdown-content').contains(event.target)) {
+        // Manejar los clics rápidos fuera del menú desplegable
+        handleClicks();
+    }
 });
 
+/*SCRIPT MOSTRAR INFO TARJETA VEHICULO*/
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona el botón de información
+    var informacionBoton = document.querySelector(".informacion-vehiculo");
+    // Selecciona los contenedores de visibilidad
+    var frenteVehiculo = document.querySelector(".visibilidad-frente-vehiculo");
+    var infoVehiculo = document.querySelector(".visibilidad-info-vehiculo");
+    // Selecciona el botón de reserva
+    var botonReserva = document.querySelector(".boton-reserva");
+
+    // Guarda el valor original de display de .visibilidad-frente-vehiculo
+    var displayOriginal = frenteVehiculo.style.display;
+
+    // Define una variable de estado para rastrear si la información está mostrada o no
+    var infoMostrada = false;
+
+    // Agrega un event listener al botón de información
+    informacionBoton.addEventListener("click", function(event) {
+        // Evita que el formulario se envíe
+        event.preventDefault();
+
+        // Si la información está mostrada, ocúltala
+        if (infoMostrada) {
+            frenteVehiculo.style.display = displayOriginal; // Restaura el valor original de display
+            botonReserva.style.display = "flex"; // Muestra el botón de reserva
+            infoVehiculo.style.display = "none"; // Oculta la información del vehículo
+            informacionBoton.textContent = "Informacion"; // Cambia el texto del botón a "Informacion"
+            // Actualiza el estado
+            infoMostrada = false;
+        } else {
+            // Si la información no está mostrada, muéstrala
+            frenteVehiculo.style.display = "none"; // Oculta el frente del vehículo
+            botonReserva.style.display = "none"; // Oculta el botón de reserva
+            infoVehiculo.style.display = "flex"; // Muestra la información del vehículo
+            informacionBoton.textContent = "Girar"; // Cambia el texto del botón a "Girar"
+            // Actualiza el estado
+            infoMostrada = true;
+        }
+    });
+});
+
+/*SCRIPT MOSTRAR INFO TARJETA VEHICULO*/
 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona el botón de información
+    var informacionBoton = document.querySelector(".informacion-vehiculo");
+    // Selecciona los contenedores de visibilidad
+    var frenteVehiculo = document.querySelector(".visibilidad-frente-vehiculoR");
+    var infoVehiculo = document.querySelector(".visibilidad-info-vehiculoR");
+
+    // Define una variable de estado para rastrear si la información está mostrada o no
+    var infoMostrada = false;
+
+    // Agrega un event listener al botón de información
+    informacionBoton.addEventListener("click", function(event) {
+        // Evita que el formulario se envíe
+        event.preventDefault();
+
+        // Si la información está mostrada, ocúltala
+        if (infoMostrada) {
+            frenteVehiculo.style.display = "block"; // Restaura el valor original de display
+            infoVehiculo.style.display = "none"; // Oculta la información del vehículo
+            informacionBoton.textContent = "Informacion"; // Cambia el texto del botón a "Informacion"
+            // Actualiza el estado
+            infoMostrada = false;
+        } else {
+            // Si la información no está mostrada, muéstrala
+            frenteVehiculo.style.display = "none"; // Oculta el frente del vehículo
+            infoVehiculo.style.display = "block"; // Muestra la información del vehículo
+            informacionBoton.textContent = "Girar"; // Cambia el texto del botón a "Girar"
+            // Actualiza el estado
+            infoMostrada = true;
+        }
+    });
+});

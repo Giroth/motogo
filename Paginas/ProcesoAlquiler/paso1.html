@@ -24,7 +24,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="/indexLogged.html"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
+                <a class="navbar-brand" href="#page-top"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -33,6 +33,7 @@
                     <ul class="navbar-nav ms-auto navbar-itemslista">
                         <li class="nav-item">
                             <input type="text" placeholder="Local de retirada" class="form-control itemlista" id="busquedalocal">
+                            
                             <div class="custom-dropdown-content" id="custom-dropdown-content">
                                 <label for="fechaEntrega" style="color: black;">Fecha de entrega:</label>
                                 <input type="date" id="fechaEntrega" class="custom-dropdown-input">
@@ -49,7 +50,7 @@
                             <input type="time" name="" id="" placeholder="Hora" class="form-control itemlista" id="hora">
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-light itemlista" onclick="window.location.href='#'"> Mis Reservas </button>
+                            <button class="btn btn-light itemlista" onclick="window.location.href='/Paginas/MisReservas/MisReservas.html'"> Mis Reservas </button>
                         </li>
                         
                         <li class="nav-item mx-0 mx-lg-1">
@@ -71,129 +72,99 @@
         </nav>
         <!-- Masthead-->
 
+
+
+
         <div class="cotainer">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                        <div class="card mx-auto cartaMiInfo">
-                            <div class="card-header myInfo" >Mis Reservas</div>
-                            <div class="card-body" >
-                               
-                                <table class="table table-bordered table-striped table-hover ">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th>#</th>
-                                            <th>Dia Inicio</th>
-                                            <th>Dia Fin</th>
-                                            <th>Hora Inicio</th>
-                                            <th>Hora Fin</th>
-                                            <th>Vehiculo y Sede</th>
-                                            <th>Acciones</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>285463</td>
-                                            <td>17/02/2024</td>
-                                            <td>22/02/2024</td>
-                                            <td>5:32PM</td>
-                                            <td>8:00AM</td>
-                                            <td><a href="" class="informacionVyS">Ver</a></td>
-                                            <td> <button class="btn btn-outline-danger itemlista botonCancelar" style="white-space: nowrap;" onclick="window.location.href='#'"> Cancelar </button></td>
-                                        </tr>
-                                      
-                                        <!-- Puedes agregar más filas según sea necesario -->
-                                    </tbody>
-                                </table>
-                                
+                        <div class="card card-padre-vehiculos">
+                            <div class="card-header">
 
+
+                                
+                            </div>
+                            <div class="card-body card-padre-vehiculo">
+                                <!-- CARDS -->
+                                <div class="row row-cols-3">
+                                    <div class="col">
+                                      <div class="card-vehiculo m-3">
+
+
+                                        <!--LADO IMAGEN-->
+                                        <div class="visibilidad-frente-vehiculo">
+                                        <img src="/assets/dr 650.webp" class="card-img-top imagen-vehiculo"
+                                          alt="Error cargando imagen"ass="card-body">                                        
+                                          <div class="title-container" ><h5 class="card-title card-sede">Motazas Cali </h5> <a href="" style="color: #F88000">Ver</a> </div>
+                                          <h5 class="card-title title-vehiculo">Suzuki DR 650 </h5>
                                         </div>
+                                        <!--LADO IMAGEN-->
+
+                                        <!--LADO INFO-->
+                                        <div class="visibilidad-info-vehiculo">
+                                            <div class="row labels-informacion">
+                                                <div class="table-responsive">
+                                                    <table class="table tabla-informacion ">
+                                                      <tbody>
+                                                        <tr>
+                                                          <td class="text-start fw-bold" >Marca</td>
+                                                          <td class="text-start">Suzuki</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td class="text-start fw-bold">Estilo</td>
+                                                          <td class="text-start ">Doble Proposito</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td class="text-start fw-bold">Cilindraje</td>
+                                                          <td class="text-start">644cc</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td class="text-start fw-bold">Motor</td>
+                                                          <td class="text-start">4T</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td class="text-start fw-bold">Kilometraje</td>
+                                                          <td class="text-start">12600km</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td class="text-start fw-bold">Color</td>
+                                                          <td class="text-start">Amarillo</td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td class="text-start fw-bold">Año</td>
+                                                          <td class="text-start">2018</td>
+                                                        </tr>
+                                                      </tbody>
+                                                    </table>
+                                                  </div>                                                  
+                                            </div>
+                                            </div>
+
+                                        <!--LADO INFO-->
+                                       <hr>
+                                        <div class="contenedor-opciones-vehiculo">
+                                       <a href=" " class="informacion-vehiculo">Informacion</a>
+                                       <button type="submit" class="btn btn-primary boton-reserva">
+                                       Reservar
+                                       </button>
+                                    </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                                             
+                                <!-- CARDS -->
+
                                     </div>
                                 </form>
-                            </div>
                         </div>
                 </div>
             </div>
-       
-
-            <div class="background-container">
-            <section class="background" >
-                <div class="container">
-                    <div class="card2">
-                                        <!--LADO IMAGEN-->
-                                        <div class="visibilidad-frente-vehiculoR">
-                                            <img src="/assets/dr 650.webp" class="card-img-top imagen-vehiculo"
-                                              alt="Error cargando imagen"ass="card-body">                                        
-                                              <div class="title-container" ><h5 class="card-title card-sede">Motazas Cali </h5> <a href="" style="color: #F88000">Ver</a> </div>
-                                              <h5 class="card-title title-vehiculo">Suzuki DR 650 </h5>
-                                            </div>
-                                            <!--LADO IMAGEN-->
-                                            <!--LADO INFO-->
-                                            <div class="visibilidad-info-vehiculoR">
-                                                <div class="row labels-informacion">
-                                                    <div class="table-responsive">
-                                                        <table class="table tabla-informacion ">
-                                                          <tbody>
-                                                            <tr>
-                                                              <td class="text-start fw-bold" >Marca</td>
-                                                              <td class="text-start">Suzuki</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td class="text-start fw-bold">Estilo</td>
-                                                              <td class="text-start ">Doble Proposito</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td class="text-start fw-bold">Cilindraje</td>
-                                                              <td class="text-start">644cc</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td class="text-start fw-bold">Motor</td>
-                                                              <td class="text-start">4T</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td class="text-start fw-bold">Kilometraje</td>
-                                                              <td class="text-start">12600km</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td class="text-start fw-bold">Color</td>
-                                                              <td class="text-start">Amarillo</td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td class="text-start fw-bold">Año</td>
-                                                              <td class="text-start">2018</td>
-                                                            </tr>
-                                                          </tbody>
-                                                        </table>
-                                                      </div>                                                  
-                                                </div>
-                                                </div>    
-                                            <!--LADO INFO-->
-                                           <hr>
-                                            <div class="contenedor-opciones-vehiculo">
-                                           <a href=" " class="informacion-vehiculo">Informacion</a>
-                                        
-                    </div>
-                </div>
-            </section>
         </div>
-
-        <div class="background-container2">
         
-            <section class="background">
-                <div class="container">
-                    <div class="card2">                        
-                        <p class="mensaje">¿Seguro que desea cancelar el servicio?</p>
-                        <div class="botones">
-                            <a href="#" class="labelCancelar" style="margin-right: 20px ;">Cancelar</a>
-                            <button class="btn btn-primary confirmar">Confirmar</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
- 
-        </div>
 
-
-
+    
+    
+        
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
