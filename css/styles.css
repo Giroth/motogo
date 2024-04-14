@@ -109,7 +109,7 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: black;
   border: 0;
   border-top: 0.125rem solid;
   opacity: 0.25;
@@ -11093,6 +11093,8 @@ html {
 
 /* RESERVA NOLOGIN */
 
+
+
 .texto {
   text-align: center;
   vertical-align: middle; /* Centrar verticalmente */
@@ -11113,7 +11115,16 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   border-bottom: transparent;
   }
 
+.card-header{
+  padding-top: 2%;
+  text-align: left;
+}
 
+  .card-vehiculo {
+    width: 250px; /* Establece un ancho fijo para todas las tarjetas */
+    height: 350px; /* Establece una altura fija para todas las tarjetas */
+    /* Añade otras propiedades de estilo según sea necesario */
+}
 
   .col-form-label{
     color: #000;
@@ -11146,15 +11157,39 @@ background-color: white !important;
 
 /* ALQUILER PASO1 */
 
+.contenedorparalelo{
+
+margin-left: 60px;
+
+}
+
+.card-padre-filtros{
+  float: left;
+  width: 30%;
+  
+  }
+
+  
+.card-padre-vehiculos{
+  float: right;
+  width: 95%; 
+  padding: 20px;
+  
+  
+}
+
 .visibilidad-info-vehiculo {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; /* Añade esta línea si quieres que las columnas estén una encima de la otra */
+  flex-direction: column;
+  overflow: hidden; 
 }
 
 .imagen-vehiculo{
 
+  width: 100%;
+  height: 200px;
   padding: 8%;
   border-radius: 10px;
 
@@ -11184,12 +11219,6 @@ font-size: 22px;
 }
 
 
-.card-padre-vehiculos{
-  width: 70%;
-
-  
-}
-
 .card-vehiculo {
   display: flex;
   flex-direction: column;
@@ -11204,15 +11233,24 @@ font-size: 22px;
 
 
 .contenedor-opciones-vehiculo {
+  position: relative;
   display: flex;
-  justify-content: center; /* Añade esta línea */
+  justify-content: center; 
   align-items: center;
   gap: 10%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;  
 }
 
 
-.boton-reserva{
+
+.tabla-informacion td {
+  padding-top: 1%;
+  font-size: 15px; /* Ajusta el tamaño según sea necesario */
+  word-wrap: break-word;
+  
+}
+
+.boton-reserva, .boton-reservaN, .boton-reservaR{
 background-color: #F88000;
 border-color: #F88000;
 }
@@ -11228,6 +11266,67 @@ color: #F88000;
   }
 
 /* ALQUILER PASO1 */
+
+/* ALQUILER PASO2 */
+
+.informacion-elegido{
+font-size: var(--bs-body-font-size);;
+}
+
+.vehiculo-elegido{
+transform: scale(1.2) !important;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.card-vehiculo-reservado{
+width: 100%;
+}
+
+.vehiculo-reservado-costo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  gap: 10px; /* Ajusta este valor para cambiar el espacio entre los elementos */
+}
+
+.card-oferta{
+  font-size: 26px;
+color: #F88000;
+}
+
+.subtitulo-card-oferta{
+  font-size: 18px;
+}
+
+.title-vehiculo, .subtitulo-card-oferta{
+ color: black;
+ font-weight: lighter;
+}
+
+.tabla-protecciones{
+font-size: 20px;
+width: 50%;
+margin-left: 25%;
+}
+
+.protecciones-texto{
+  margin-left: 25%;
+}
+
+.boton-reservaR{
+
+text-align: center;
+
+}
+
+/* ALQUILER PASO2 */
+
+
+
 
 /* RESERVA NOLOGIN */
 
@@ -11586,7 +11685,9 @@ font-size: 0;
   }
 }
 
+
 .footer {
+  
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #404040;
@@ -11597,5 +11698,8 @@ font-size: 0;
 .copyright {
   background-color: #1e5246;
 }
+
+
+
 
 }

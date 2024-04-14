@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Motogo al instante</title>
+        <!-- Favicon-->
+      <!-- -->  <link rel="icon" type="image/png" href="/assets/favicon.jpg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"></script>
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+      
+     
+    </head>
+    <body id="page-top-body-blanco">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="/indexLogged.html"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto navbar-itemslista">
+                        <li class="nav-item">
+                            <input type="text" placeholder="Local de retirada" class="form-control itemlista" id="busquedalocal">
+                            
+                            <div class="custom-dropdown-content" id="custom-dropdown-content">
+                                <label for="fechaEntrega" style="color: black;">Fecha de entrega:</label>
+                                <input type="date" id="fechaEntrega" class="custom-dropdown-input">
+                                
+                                <input type="time" id="fechaDevolucion" class="custom-dropdown-input">
+                                <button class="btn btn-primary custom-dropdown-button ">Solicitar</button>
+                            </div>
+
+                        </li>     
+                        <li class="nav-item">
+                            <input type="date" name="" id="" class="form-control itemlista" placeholder="Fecha de retirada" id="fecharetirada">
+                        </li>
+                        <li class="nav-item">
+                            <input type="time" name="" id="" placeholder="Hora" class="form-control itemlista" id="hora">
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-light itemlista" onclick="window.location.href='/Paginas/MisReservas/MisReservas.html'"> Mis Reservas </button>
+                        </li>
+                        
+                        <li class="nav-item mx-0 mx-lg-1">
+                            <div class="wrapprueba"|></div>
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" id="prueba">
+                                <img src="/assets/img/noprofile.png" class="imgprofile">
+                                <p class="informacion" id="informacionPersonal" onclick="window.location.href='/Paginas/InformacionPersonal/MiInformacion.html'">Johan Osorio</p>
+                            </a>
+                        </div>
+                        </li>
+
+                        <li class="nav-item" style="list-style: none;">
+                            <button class="btn btn-light itemlista botonCerrarS" style="white-space: nowrap;" onclick="window.location.href='/index.html'"> Cerrar Sesion </button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+
+        
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                        <div class="card card-padre-vehiculos card-vehiculo-reservado">
+                            <div class="card-header">
+                            <div class="row row-cols-2 vehiculo-elegido ">
+                    
+                                
+                                <div class="col d-flex justify-content-center">
+
+                                    <div class="card-vehiculo m-3 ">
+                      
+                                        <div class="visibilidad-frente-vehiculo vehiculo-reservado-costo">
+                                           
+                                            <div class="title-container">
+                                                <h5 class="card-title card-sede card-oferta">Oferta</h5>                                                
+                                            </div>
+                                            <h5 class="title-vehiculo">COP: 156.000</h5>
+                                            <h5 class="card-title subtitulo-card-oferta"> al dia</h5>
+                                        </div>
+                                                                                                                                                  
+                                    </div>
+                                </div>
+
+                                   
+                                <div class="col d-flex justify-content-center">
+                                    <div class="card-vehiculo m-3">
+                                        <!--LADO IMAGEN-->
+                                        <div class="visibilidad-frente-vehiculo">
+                                            <img src="/assets/dr 650.webp" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
+                                            <div class="title-container">
+                                                <h5 class="card-title card-sede">Motazas Cali</h5>
+                                                <a href="" style="color: #F88000" class="informacion-elegido">Ver</a>
+                                            </div>
+                                            <h5 class="card-title title-vehiculo">DR 650</h5>
+                                        </div>
+                                        <!--LADO IMAGEN-->                                    
+                                        <!--LADO INFO-->
+                                        <div class="visibilidad-info-vehiculo" style="display: none;">
+                                            <div class="row labels-informacion">
+                                                <div class="table-responsive">
+                                                    <table class="table tabla-informacion ">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Marca</td>
+                                                                <td class="text-start">Suzuki</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Estilo</td>
+                                                                <td class="text-start">Trail</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Cilindraje</td>
+                                                                <td class="text-start">644cc</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Motor</td>
+                                                                <td class="text-start">4T</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Kilometraje</td>
+                                                                <td class="text-start">1100km</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Color</td>
+                                                                <td class="text-start">Amarillo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Año</td>
+                                                                <td class="text-start">2018</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="text-start fw-bold">Placa</td>
+                                                                <td class="text-start">ABC-123</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--LADO INFO-->
+                                        <hr>
+                                        <div class="contenedor-opciones-vehiculo">
+                                            <a href=" " class="informacion-vehiculo informacion-elegido">Información</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                 <br>
+                                
+                                 <h5 class="protecciones-texto">Protecciones</h5>
+
+                                <table class="table tabla-protecciones ">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-start text-head fw-bold">Sin proteccion</td>
+                                            <td class="text-start text-mid">Sin costo</td> 
+                                            <td class="text-start text-check"><input name="proteccion" class="form-check-input" type="checkbox"></td> 
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-head fw-bold">Proteccion basica</td>
+                                            <td class="text-start text-mid">Trail</td>
+                                            <td class="text-start text-check"><input name="proteccion" class="form-check-input" type="checkbox"></td> 
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start text-head fw-bold">Proteccion completa </td>
+                                            <td class="text-start text-mid">644cc</td>
+                                            <td class="text-start text-check"><input name="proteccion" class="form-check-input" type="checkbox"></td> 
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                                 
+                                <div class="container-boton-reservaR d-flex justify-content-center"> 
+                                    <button type="submit" class="btn btn-primary boton-reservaR">
+                                        Reservar
+                                        </button>
+                                </div>
+
+
+                      </div>                        
+                </div>
+            </div>
+          
+       
+
+    <div style="clear: both;"></div>
+
+        
+        <!-- Footer-->
+        <footer class="footer text-center" >
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Contacto</h4>
+                        <p class="lead mb-0">
+                            joha.osorio@udla.edu.co
+                            <br />
+                            Universidad de la Amazonia
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                  
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Acerca de Motogo</h4>
+                        <p class="lead mb-0">
+                          
+                     Somos una empresa de intermediación que colabora con una amplia red de proveedores de alquiler de motocicletas a nivel nacional, con el objetivo de ofrecerte acceso a los vehículos más adecuados y oportunos para tus necesidades.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Siguenos en nuestras redes sociales</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com" target="_blank"><i class="fab fa-fw fa-facebook-f" ></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.x.com" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>                      
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com" target="_blank"><i class="fab fa-fw fa-instagram"></i></a>
+                    </div>
+
+
+
+                      </div>
+                    </div>
+                 </footer>
+
+
+  
+
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Johan 2024</small></div>
+        </div>           
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="/js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>      
+            
+    </body>
+
+<script>
+        const checkboxes = document.querySelectorAll('input[name="proteccion"]');
+ checkboxes.forEach((checkbox) => {
+     checkbox.addEventListener('change', function() {
+         if (this.checked) {
+             checkboxes.forEach((cb) => {
+                 if (cb !== this) {
+                     cb.checked = false;
+                 }
+             });
+         }
+     });
+ });
+</script>
+
+</html>
