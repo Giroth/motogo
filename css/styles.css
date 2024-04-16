@@ -11171,6 +11171,7 @@ margin-left: 60px;
 
   
 .card-padre-vehiculos{
+  
   float: right;
   width: 95%; 
   padding: 20px;
@@ -11322,6 +11323,109 @@ margin-left: 25%;
 text-align: center;
 
 }
+
+/* RESUMEN */
+
+.cerrarResumen{
+  position: absolute;
+  top: 70px;
+  right: 400px;
+  margin-top:105px;
+  margin-right: 300px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: url(/assets/close.png); 
+
+}
+
+.cuerpoResumen{
+padding: 5%;
+}
+
+.textoResumen, .textoResumenT{
+color: #000;
+text-align: left;
+font-size: 18px;
+font-weight: lighter;
+}
+
+.textoResumenT{
+font-weight: bold;
+}
+
+.container-resumen{
+  padding: 5%;
+  padding-top: 0 ;
+}
+
+.resumenTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #EFEFEF;
+  z-index: 1;
+  
+}
+
+.resumenBot{
+  padding: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  text-align: center;
+  background-color: #FF8800;
+  z-index: 1;
+  
+}
+
+.resumenBoton{
+  padding-bottom: 5%;
+display: flex;
+justify-content: center;
+  
+
+}
+
+.valorFinal{
+  padding-top: 0;
+  justify-content: center;
+}
+
+.tituloResumen{
+
+font-size: 40px;
+font-weight: bold;
+color: #FF8800;
+
+}
+.textoVF{
+  font-weight: bolder;
+  font-size: 40px ;
+}
+
+.textoBot, .textoVF{
+  color: white;
+}
+
+.cardResumen{
+width: 400px  ;
+height: 700px ;
+}
+
+.cardResumen{
+padding: 0;
+
+
+}
+
+
+/* RESUMEN */
+
 
 /* ALQUILER PASO2 */
 

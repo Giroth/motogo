@@ -39,7 +39,7 @@
                                 <input type="date" id="fechaEntrega" class="custom-dropdown-input">
                                 
                                 <input type="time" id="fechaDevolucion" class="custom-dropdown-input">
-                                <button class="btn btn-primary custom-dropdown-button ">Solicitar</button>
+                                <button class="btn btn-primary custom-dropdown-button " onclick="window.location.href='/Paginas/ProcesoAlquiler/paso1.html'">Solicitar</button>
                             </div>
 
                         </li>     
@@ -169,19 +169,19 @@
                                     <tbody>
                                         <tr>
                                             <td class="text-start text-head fw-bold">Sin proteccion</td>
-                                            <td class="text-start text-mid">Sin costo</td> 
+                                            <td class="text-start text-mid">Sin costo /dia</td> 
                                             <td class="text-start text-check"><input name="proteccion" class="form-check-input" type="checkbox"></td> 
 
 
                                         </tr>
                                         <tr>
                                             <td class="text-start text-head fw-bold">Proteccion basica</td>
-                                            <td class="text-start text-mid">Trail</td>
+                                            <td class="text-start text-mid">COP 30.000 /dia</td>
                                             <td class="text-start text-check"><input name="proteccion" class="form-check-input" type="checkbox"></td> 
                                         </tr>
                                         <tr>
                                             <td class="text-start text-head fw-bold">Proteccion completa </td>
-                                            <td class="text-start text-mid">644cc</td>
+                                            <td class="text-start text-mid">COP 60.000 /dia</td>
                                             <td class="text-start text-check"><input name="proteccion" class="form-check-input" type="checkbox"></td> 
                                         </tr>
                                        
@@ -194,12 +194,108 @@
                                         </button>
                                 </div>
 
-
                       </div>                        
                 </div>
             </div>
           
        
+<!--    RESUMEN    -->
+
+
+<div class="background-container2">
+    <button class="cerrarResumen"></button>
+    <section class="background">
+        
+        <div class="container">
+            
+            <div class="card2 cardResumen">        
+                
+                <div class="resumenTop">
+                    <p class="mensaje tituloResumen">Resumen</p>
+                </div>
+
+                <div class="cuerpoResumen ">
+                    <p class="textoResumenT">Lugar de retiro y devolucion</p>
+                    <p class="textoResumen">Sede Cali Aeropuerto</p>
+                    <p class="textoResumenT">Vehiculo a alquilar</p>
+                    <p class="textoResumen">Suzuki DR 650</p>                
+                </div>
+
+                <div class="">
+                    <p class="mensaje tituloResumen">Oferta</p>
+                </div>
+                
+                <div class="container-resumen">
+                    
+                    <table class="table tabla-resumen table-borderless">
+                        <tbody>
+                            <tr>
+                                <td class="text-start fw-bold">Costo del dia</td>
+                                <td class="text-start text-end fw-bold">Total</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start ">05 x COP 156.000</td>
+                                <td class="text-start text-end">COP 780.000</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start fw-bold">Protecciones</td>
+                                <td class="text-start"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-start">Sin proteccion</td>
+                                <td class="text-start text-end">COP 0</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start fw-bold">IVA (19%)</td>
+                                <td class="text-start text-end">COP 148.200</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start fw-bold"></td>
+                                <td class="text-start text-end"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-start fw-bold"></td>
+                                <td class="text-start text-end"></td>
+                            </tr>
+                            <tr>
+                                <td class="text-start fw-bold"></td>
+                                <td class="text-start text-end">Factura: #285463</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="resumenBot">
+                    <p class="mensaje textoBot">Valor Total</p>
+                </div>
+                <div class="resumenBot valorFinal">
+                    <p class="mensaje textoVF">COP: 928.200</p>
+                </div>
+                <div class="resumenBot resumenBoton">
+                    <button class="btn btn-light itemlista" onclick="window.location.href='/Paginas/MisReservas/MisReservas.html'"> Ir a pago </button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+</div>
+
+
+<!--    RESUMEN    -->
+
+
+
+
+
+
+
+
+
+
+
 
     <div style="clear: both;"></div>
 

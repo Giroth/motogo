@@ -313,3 +313,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
+ // Abrir/cerrar resumen
+document.querySelector('.boton-reservaR').addEventListener('click', function() {
+    document.querySelector('.background-container2').style.display = 'flex';
+});
+document.querySelector('.cerrarResumen').addEventListener('click', function() {
+    document.querySelector('.background-container2').style.display = 'none';
+});
+// Abrir/cerrar resumen
