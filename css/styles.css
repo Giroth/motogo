@@ -11144,9 +11144,9 @@ box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
   }
 
 .opcionesRegistro{
-
   display: flex;
   justify-content: space-between;
+  align-items: center;
   }
 
 #page-top-body-blanco{
@@ -11423,11 +11423,189 @@ padding: 0;
 
 }
 
-
 /* RESUMEN */
 
-
 /* ALQUILER PASO2 */
+
+/* VerSede */
+.tarjetaSede {
+  margin: 150px auto 0; /* Esto establece un margen de 50px arriba y automáticamente a los lados izquierdo y derecho */
+  max-width: 50%; /* Establece el ancho máximo de la tarjeta */
+  height: 300px;
+  padding: 1%;
+  
+  
+}
+
+.tituloSede{
+font-size: 30px;
+text-align: left;
+}
+
+.tituloSede2{
+  font-size: 22px;
+  text-align: left;
+  }
+
+.tarjetaVehiculosSede{
+margin-top: 10%;
+}
+
+.columnaImagen {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  
+  margin-right: 5%;
+}
+
+.fotoSede{
+  margin: auto;
+  width: 300px;
+  
+}
+.subtituloInfoSede{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.estadoSede{
+
+color: green;
+margin-left: 30px;
+}
+
+.txt{
+color: #000;
+margin: 0;
+
+}
+
+/* VerSede */
+
+
+/*Indice Empresa*/
+
+.card-padre-sedes{
+  width: 100%; 
+
+  padding: 20px;
+  
+}
+
+.columnaImagenSede{
+  display: flex;    
+  align-items: center; /* Centra verticalmente */
+}
+
+.botonVerSede{
+margin-bottom: 10px;
+width: 100px;
+height: 40px;
+
+}
+
+.descripcionsede > p{
+margin-bottom: 0;
+}              
+     
+.prueba{
+display: flex;
+justify-content: center;
+}
+
+.añadirSede {
+  background-color: orange;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary.rounded-circle span {
+  color: white;
+  font-size: 30px;
+  line-height: 0;
+}
+
+.d-flex.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.columnaLateral{
+
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+
+}
+
+.infoEmpresa{
+font-size: 22px;
+color: #000;
+font-weight: bold;
+}
+
+.imgEmpresa{
+width: 100px !important;
+}
+.botonEditarE{
+  margin-left: 60px;
+}
+
+.InformacionSede{
+text-align: right;
+margin: 0;
+
+}
+
+
+/*Indice Empresa*/
+
+/*Crear sede*/
+.crearSedeInfo{
+font-size: 26px;
+color: #000;
+}
+
+.inputSede{
+  margin-bottom: 30px;
+width: 200px;
+}
+
+.tarjetaCrearSede{
+margin-left: 150px;
+width: 80%;
+
+
+}
+
+.crearDescripcion{
+margin-top: 10px;
+font-size: 20px;
+font-weight: bold;
+}
+
+#descripcion{
+width: 300px;
+height: 100px;
+border-radius: 0.5rem;
+border: 0.125rem solid #ced4da;
+}
+
+.cargarImagenSede{
+width: 400px;
+}
+
+.botonCrearSede{
+background-color: #FF8800;
+border: #FF8800;
+  margin-left: 70px;
+}
+/*Crear sede*/
 
 
 

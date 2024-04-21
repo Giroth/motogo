@@ -39,7 +39,7 @@
                                 <input type="date" id="fechaEntrega" class="custom-dropdown-input">
                                 
                                 <input type="time" id="fechaDevolucion" class="custom-dropdown-input">
-                                <button class="btn btn-primary custom-dropdown-button ">Solicitar</button>
+                                <button class="btn btn-primary custom-dropdown-button " onclick="window.location.href='/Paginas/ProcesoAlquiler/paso1.html'">Solicitar</button>
                             </div>
 
                         </li>     
@@ -74,14 +74,40 @@
 
 
 
+        <div class="card mb-3 tarjetaSede ">
+            <div class="row g-0 d-flex justify-content-center">
+                <div class="col-md-8">
+                    <div class="card-body ">
+                        <h5 class="card-title tituloSede">Motazas Cali <span class="estadoSede">· Abierto</span></h5>
+                        <h5 class="card-title tituloSede2">Sede Cali Aeropuerto</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="fw-bold subtituloInfoSede">Informacion Basica</p>
+                                <p class="txt apertura">Horario de apertura: <span> 06:00 AM</span></p> 
+                                <p class="txt cierre">Horario de cierre: <span> 06:00 PM</span></p>
+                                <p class="txt direccion">Direccion: <span> Cll 12-#2C-46</span></p>
+                                <p class="txt telefono">Telefono:  <span> 312 456 3014</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subtituloInfoSede">Descripcion</p>
+                                <p class="txt descripcion">Ubicada cerca del aeropuerto, numeros adicionales: 312 4563012 - 312453011</p>
+                            </div>
+                        </div>
+                        
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-3 columnaImagen">
+                    <img src="/assets/img/sedecaliaeropuerto.jpg" class="fotoSede" alt="Imagen de la sede">
+                </div>
+            </div>
+        </div>
 
 
+    
 
-
-
-        <div class="container contenedorparalelo"> 
-
-            <div class="card card-padre-filtros">
+       <div class="container contenedorparalelo "> 
+            <div class="card card-padre-filtros tarjetaVehiculosSede">
                 <div class="card-header">
                     <h3 class="titulo-inventario">Filtros</h3>
                 </div>
@@ -134,11 +160,9 @@
             </div>
 
 
-
-        
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                        <div class="card card-padre-vehiculos">
+            <div class="row justify-content-center ">
+                <div class="col-md-8 ">
+                        <div class="card card-padre-vehiculos tarjetaVehiculosSede">
                             <div class="card-header">
 
                                 <h3 class="titulo-inventario"> Vehiculos Disponibles </h3>
@@ -156,7 +180,7 @@
                                                 <img src="/assets/dr 650.webp" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
                                                 <div class="title-container">
                                                     <h5 class="card-title card-sede">Motazas Cali</h5>
-                                                    <a href="/Paginas/versede.html" style="color: #F88000">Ver</a>
+                                                    <a href="" style="color: #F88000">Ver</a>
                                                 </div>
                                                 <h5 class="card-title title-vehiculo">DR 650</h5>
                                             </div>
@@ -223,7 +247,7 @@
                                                 <img src="/assets/gsxr-150.png" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
                                                 <div class="title-container">
                                                     <h5 class="card-title card-sede">Motazas Cali</h5>
-                                                    <a href="/Paginas/versede.html" style="color: #F88000">Ver</a>
+                                                    <a href="" style="color: #F88000">Ver</a>
                                                 </div>
                                                 <h5 class="card-title title-vehiculo">GSX-R 150</h5>
                                             </div>
@@ -288,7 +312,7 @@
                                                 <img src="/assets/TVSRaider.webp" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
                                                 <div class="title-container">
                                                     <h5 class="card-title card-sede">Motazas Cali</h5>
-                                                    <a href="/Paginas/versede.html" style="color: #F88000">Ver</a>
+                                                    <a href="" style="color: #F88000">Ver</a>
                                                 </div>
                                                 <h5 class="card-title title-vehiculo">Raider</h5>
                                             </div>
@@ -352,7 +376,7 @@
                                                 <img src="/assets/AKTNKD.jpg" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
                                                 <div class="title-container">
                                                     <h5 class="card-title card-sede">Motazas Cali</h5>
-                                                    <a href="/Paginas/versede.html" style="color: #F88000">Ver</a>
+                                                    <a href="" style="color: #F88000">Ver</a>
                                                 </div>
                                                 <h5 class="card-title title-vehiculo">NKD</h5>
                                             </div>
@@ -417,7 +441,7 @@
                                                 <img src="/assets/BenelliLeon.jpeg" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
                                                 <div class="title-container">
                                                     <h5 class="card-title card-sede">Motazas Cali</h5>
-                                                    <a href="/Paginas/versede.html" style="color: #F88000">Ver</a>
+                                                    <a href="" style="color: #F88000">Ver</a>
                                                 </div>
                                                 <h5 class="card-title title-vehiculo">Leoncino (250)</h5>
                                             </div>
@@ -482,7 +506,7 @@
                                                 <img src="/assets/strkrsupers.webp" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
                                                 <div class="title-container">
                                                     <h5 class="card-title card-sede">Motazas Cali</h5>
-                                                    <a href="/Paginas/versede.html" style="color: #F88000">Ver</a>
+                                                    <a href="" style="color: #F88000">Ver</a>
                                                 </div>
                                                 <h5 class="card-title title-vehiculo">Super Soco</h5>
                                             </div>

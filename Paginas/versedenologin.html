@@ -21,10 +21,10 @@
      
     </head>
     <body id="page-top-body-blanco">
-        <!-- Navigation-->
+        Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="/indexLogged.html"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
+                <a class="navbar-brand" href="#page-top"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -32,8 +32,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto navbar-itemslista">
                         <li class="nav-item">
-                            <input type="text" placeholder="Local de retirada" class="form-control itemlista" id="busquedalocal">
-                            
+                            <input type="text" placeholder="Local de retirada" class="form-control itemlista " id="busquedalocal">
+
                             <div class="custom-dropdown-content" id="custom-dropdown-content">
                                 <label for="fechaEntrega" style="color: black;">Fecha de entrega:</label>
                                 <input type="date" id="fechaEntrega" class="custom-dropdown-input">
@@ -46,42 +46,68 @@
                         <li class="nav-item">
                             <input type="date" name="" id="" class="form-control itemlista" placeholder="Fecha de retirada" id="fecharetirada">
                         </li>
+
+                        <li><input type="time" name="" id="" placeholder="Hora" class="form-control itemlista" id="hora"></li>
                         <li class="nav-item">
-                            <input type="time" name="" id="" placeholder="Hora" class="form-control itemlista" id="hora">
+                            
                         </li>
                         <li class="nav-item">
-                            <button class="btn btn-light itemlista" onclick="window.location.href='/Paginas/MisReservas/MisReservas.html'"> Mis Reservas </button>
+                            <button class="btn btn-light itemlista" onclick="window.location.href='/Paginas/VerReserva/VerReservaNoLogin.html'"> Mis Reservas </button>
                         </li>
-                        
+                        <div class="wrapprueba"|>
                         <li class="nav-item mx-0 mx-lg-1">
-                            <div class="wrapprueba"|></div>
                             <a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact" id="prueba">
                                 <img src="/assets/img/noprofile.png" class="imgprofile">
-                                <p class="informacion" id="informacionPersonal" onclick="window.location.href='/Paginas/InformacionPersonal/MiInformacion.html'">Johan Osorio</p>
+                                <p class="iniciarsesion" id="login-link" >Iniciar Sesion</p>
                             </a>
                         </div>
                         </li>
-
-                        <li class="nav-item" style="list-style: none;">
-                            <button class="btn btn-light itemlista botonCerrarS" style="white-space: nowrap;" onclick="window.location.href='/index.html'"> Cerrar Sesion </button>
-                        </li>
-
                     </ul>
                 </div>
             </div>
+         
+       
         </nav>
+<!-- navigation-->
+
         <!-- Masthead-->
 
 
 
+        <div class="card mb-3 tarjetaSede ">
+            <div class="row g-0 d-flex justify-content-center">
+                <div class="col-md-8">
+                    <div class="card-body ">
+                        <h5 class="card-title tituloSede">Motazas Cali <span class="estadoSede">· Abierto</span></h5>
+                        <h5 class="card-title tituloSede2">Sede Cali Aeropuerto</h5>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="fw-bold subtituloInfoSede">Informacion Basica</p>
+                                <p class="txt apertura">Horario de apertura: <span> 06:00 AM</span></p> 
+                                <p class="txt cierre">Horario de cierre: <span> 06:00 PM</span></p>
+                                <p class="txt direccion">Direccion: <span> Cll 12-#2C-46</span></p>
+                                <p class="txt telefono">Telefono:  <span> 312 456 3014</span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="subtituloInfoSede">Descripcion</p>
+                                <p class="txt descripcion">Ubicada cerca del aeropuerto, numeros adicionales: 312 4563012 - 312453011</p>
+                            </div>
+                        </div>
+                        
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+                <div class="col-md-3 columnaImagen">
+                    <img src="/assets/img/sedecaliaeropuerto.jpg" class="fotoSede" alt="Imagen de la sede">
+                </div>
+            </div>
+        </div>
 
 
+    
 
-
-
-        <div class="container contenedorparalelo"> 
-
-            <div class="card card-padre-filtros">
+       <div class="container contenedorparalelo "> 
+            <div class="card card-padre-filtros tarjetaVehiculosSede">
                 <div class="card-header">
                     <h3 class="titulo-inventario">Filtros</h3>
                 </div>
@@ -134,8 +160,6 @@
             </div>
 
 
-
-        
             <div class="row justify-content-center">
                 <div class="col-md-8">
                         <div class="card card-padre-vehiculos">
@@ -208,7 +232,7 @@
                                             <hr>
                                             <div class="contenedor-opciones-vehiculo">
                                                 <a href=" " class="informacion-vehiculo">Información</a>
-                                                <button type="submit" class="btn btn-primary boton-reserva" onclick="window.location.href='/Paginas/ProcesoAlquiler/paso2.html'">Reservar</button>
+                                                <button type="submit" class="btn btn-primary boton-reservaN">Reservar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -276,7 +300,7 @@
                                             <hr>
                                             <div class="contenedor-opciones-vehiculo">
                                                 <a href=" " class="informacion-vehiculo">Información</a>
-                                                <button type="submit" class="btn btn-primary boton-reserva" onclick="window.location.href='/Paginas/ProcesoAlquiler/paso2.html'">Reservar</button>
+                                                <button type="submit" class="btn btn-primary boton-reservaN">Reservar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -340,7 +364,7 @@
                                             <hr>
                                             <div class="contenedor-opciones-vehiculo">
                                                 <a href=" " class="informacion-vehiculo">Información</a>
-                                                <button type="submit" class="btn btn-primary boton-reserva" onclick="window.location.href='/Paginas/ProcesoAlquiler/paso2.html'">Reservar</button>
+                                                <button type="submit" class="btn btn-primary boton-reservaN">Reservar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -404,7 +428,7 @@
                                             <hr>
                                             <div class="contenedor-opciones-vehiculo">
                                                 <a href=" " class="informacion-vehiculo">Información</a>
-                                                <button type="submit" class="btn btn-primary boton-reserva" onclick="window.location.href='/Paginas/ProcesoAlquiler/paso2.html'">Reservar</button>
+                                                <button type="submit" class="btn btn-primary boton-reservaN">Reservar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -469,7 +493,7 @@
                                             <hr>
                                             <div class="contenedor-opciones-vehiculo">
                                                 <a href=" " class="informacion-vehiculo">Información</a>
-                                                <button type="submit" class="btn btn-primary boton-reserva" onclick="window.location.href='/Paginas/ProcesoAlquiler/paso2.html'">Reservar</button>
+                                                <button type="submit" class="btn btn-primary boton-reservaN">Reservar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -534,7 +558,7 @@
                                             <hr>
                                             <div class="contenedor-opciones-vehiculo">
                                                 <a href=" " class="informacion-vehiculo">Información</a>
-                                                <button type="submit" class="btn btn-primary boton-reserva" onclick="window.location.href='/Paginas/ProcesoAlquiler/paso2.html'">Reservar</button>
+                                                <button type="submit" class="btn btn-primary boton-reservaN">Reservar</button>
                                             </div>
                                         </div>
                                     </div>
@@ -548,7 +572,6 @@
                 </div>
             </div>
         </div>
-        
         
 
     
@@ -591,6 +614,46 @@
                     </div>
                  </footer>
 
+                 <section>
+                    <div id="login">
+                        <h3 class="text-center text-white pt-5">¡Bienvenido!</h3>
+                        <button class="cerrarLogin"></button>
+                        <div class="container">
+                            <div id="login-row" class="row justify-content-center align-items-center">
+                                <div id="login-column" class="col-md-6">
+                                    <div id="login-box" class="col-md-12">
+                                        <form id="login-form" class="form" action="">
+                                            <h3 class="text-center text-info">Iniciar Sesion</h3>
+                                            <div class="form-group">
+                                                <br>
+                                                <input type="text" name="username" id="username" class="form-control" placeholder="Ingrese su correo">
+                                            </div>
+                                            <div class="form-group">
+                                                <br>
+                                                <input type="text" name="password" id="password" class="form-control" placeholder="Contraseña">
+                                                <a href="/Paginas/RecuperacionContrasenia.html" class="contraseñaOlvidada text-info">¿Ha olvidado su contraseña?</a>
+                                            </div>
+                                            <div class="form-group d-flex justify-content-between align-items-center">
+                                                <div id="register-submit-container" class="position-relative">
+                                                    <a href="#" class="text-info" id="register-link">Crear cuenta</a>
+                                                    <div id="register-option" class="position-absolute bg-white p-3" style="display: none; top: 100%; left: 0; width: 200px;">
+                                                        <ul class="list-unstyled mb-0 opcionregistro">
+                                                            <li><a href="/Paginas/RegistroPersona.html" target="_blank"class="opcionregistro">Registrar persona</a></li>
+                                                            <li><a href="/Paginas/RegistroEmpresa.html" class="opcionregistro" target="_blank">Registrar empresa</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-info btn-md btn-submit" data-bs-target="_blank" onclick="event.preventDefault(); window.location.href='/indexLogged.html'"> Iniciar Sesión </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+                    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                </section>
 
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
