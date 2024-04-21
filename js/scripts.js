@@ -6,6 +6,99 @@
 //
 // Scripts
 // 
+// MOSTRAR Y OCULTAR LA PANTALLA DE EDICION DE VEHICULO
+console.log("El archivo JavaScript se ha cargado correctamente");
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Escuchar el evento click en todos los botones "Editar" de los vehículos
+    var botonesEditar = document.querySelectorAll('.boton-editar-vehiculo');
+    botonesEditar.forEach(function(boton) {
+        boton.addEventListener('click', function() {
+            // Ocultar el contenedor .card-padre-vehiculo
+            var contenedorPadreVehiculo = this.closest('.card-padre-vehiculo');
+            contenedorPadreVehiculo.style.display = 'none';
+
+            // Mostrar el contenedor .editarMoto correspondiente
+            var editarMoto = this.closest('.card').querySelector('.editarMoto');
+            editarMoto.style.display = 'block';
+
+            // Ocultar el botón de nuevo vehículo
+            var botonNuevoVehiculo = document.querySelector('.botonNuevoVehiculo');
+            botonNuevoVehiculo.style.display = 'none';
+
+            // Cambiar el texto de .titulo-sedes por "Motocicleta ID: <span></span>"
+            var tituloSedes = document.querySelector('.titulo-sedes');
+            var idMotocicleta = this.closest('.card-vehiculo').querySelector('.title-vehiculo').innerText;
+            tituloSedes.innerHTML = 'Motocicleta ID: <span>' + /*ACA PUEDO PONER EL ID DE LA MOTO*/ + '</span>';
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Escuchar el evento click en todos los botones "Cancelar" de la edición de vehículos
+    var botonesCancelar = document.querySelectorAll('.cancelar-edicion');
+    botonesCancelar.forEach(function(boton) {
+        boton.addEventListener('click', function() {
+            // Mostrar el contenedor .card-padre-vehiculo
+            var contenedorPadreVehiculo = this.closest('.editarMoto').previousElementSibling;
+            contenedorPadreVehiculo.style.display = 'block';
+
+            // Ocultar el contenedor .editarMoto
+            var editarMoto = this.closest('.editarMoto');
+            editarMoto.style.display = 'none';
+
+            // Mostrar el botón de nuevo vehículo
+            var botonNuevoVehiculo = document.querySelector('.botonNuevoVehiculo');
+            botonNuevoVehiculo.style.display = 'block';
+
+            // Restaurar el texto de .titulo-sedes
+            var tituloSedes = document.querySelector('.titulo-sedes');
+            tituloSedes.innerHTML = 'Vehiculos de la sede <span class="botonNuevoVehiculo"><button type="submit" class="btn btn-primary boton-reserva float-end" >Nuevo Vehiculo</button></span>';
+        });
+    });
+});
+
+// MOSTRAR Y OCULTAR LA PANTALLA DE EDICION DE VEHICULO
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecciona todos los botones de información
+    var informacionBotones = document.querySelectorAll(".informacion-vehiculo");
+
+    // Agrega un event listener a cada botón de información
+    informacionBotones.forEach(function(informacionBoton) {
+        // Guarda el valor original de display de .visibilidad-frente-vehiculo
+        var frenteVehiculo = informacionBoton.closest('.card-vehiculo').querySelector(".visibilidad-frente-vehiculo");
+        var displayOriginal = frenteVehiculo.style.display;
+
+        informacionBoton.addEventListener("click", function(event) {
+            // Evita que el formulario se envíe
+            event.preventDefault();
+
+            // Selecciona los elementos dentro de la tarjeta actual
+            var tarjeta = informacionBoton.closest('.card-vehiculo');
+            var infoVehiculo = tarjeta.querySelector(".visibilidad-info-vehiculo");
+            var botonReserva = tarjeta.querySelector(".boton-reserva"); // Selecciona el botón de reserva
+
+            // Verifica si la información ya está mostrada
+            var infoMostrada = frenteVehiculo.style.display === "none";
+
+            // Si la información está mostrada, ocúltala
+            if (infoMostrada) {
+                frenteVehiculo.style.display = displayOriginal; // Restaura el valor original de display
+                infoVehiculo.style.display = "none"; // Oculta la información del vehículo
+                botonReserva.style.display = "block"; // Muestra el botón de reserva
+                informacionBoton.textContent = "Información"; // Cambia el texto del botón a "Información"
+            } else {
+                // Si la información no está mostrada, muéstrala
+                frenteVehiculo.style.display = "none"; // Oculta el frente del vehículo
+                infoVehiculo.style.display = "flex"; // Muestra la información del vehículo
+                botonReserva.style.display = "none"; // Oculta el botón de reserva
+                informacionBoton.textContent = "Girar"; // Cambia el texto del botón a "Girar"
+            }
+        });
+    });
+});
 
 
 
@@ -273,13 +366,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
 /*SCRIPT MOSTRAR INFO TARJETA VEHICULO*/
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
     // Selecciona el botón de información
     var informacionBoton = document.querySelector(".informacion-vehiculo");
@@ -314,6 +401,23 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+        //MOSTRAR INFORMACION DE VEHICULOS EN VERSEDEEMPRESA
+    
+   // Escuchar el evento click en todos los botones "Editar" de los vehículos
+   var botonesEditar = document.querySelectorAll('.boton-editar-vehiculo');
+   botonesEditar.forEach(function(boton) {
+       boton.addEventListener('click', function() {
+           // Ocultar el contenedor .card-padre-vehiculo
+           var contenedorPadreVehiculo = this.closest('.card-padre-vehiculo');
+           contenedorPadreVehiculo.style.display = 'none';
+
+           // Mostrar el contenedor .editarMoto correspondiente
+           var editarMoto = this.closest('.card').querySelector('.editarMoto');
+           editarMoto.style.display = 'block';
+       });
+   });
+
  // Abrir/cerrar resumen
 document.querySelector('.boton-reservaR').addEventListener('click', function() {
     document.querySelector('.background-container2').style.display = 'flex';
@@ -322,3 +426,6 @@ document.querySelector('.cerrarResumen').addEventListener('click', function() {
     document.querySelector('.background-container2').style.display = 'none';
 });
 // Abrir/cerrar resumen
+
+
+

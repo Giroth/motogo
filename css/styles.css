@@ -11579,8 +11579,6 @@ width: 200px;
 .tarjetaCrearSede{
 margin-left: 150px;
 width: 80%;
-
-
 }
 
 .crearDescripcion{
@@ -11607,6 +11605,26 @@ border: #FF8800;
 }
 /*Crear sede*/
 
+/*Ver Sede Empresa*/
+
+.tarjetaVerSede{
+  width: 80%;
+}
+
+.actividadSede{
+color: #000;
+}
+.editarVehiculo{
+color: #000;
+font-size: 20px;
+text-align: start;
+}
+
+.estadosSede{
+font-size: 20px;
+font-weight: bold;
+  text-align: start;
+}
 
 
 
