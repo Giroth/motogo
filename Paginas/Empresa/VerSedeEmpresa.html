@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>Motogo al instante</title>
         <!-- Favicon-->
-      <!-- -->  <link rel="icon" type="image/png" href="assets/favicon.jpg" />
+      <!-- -->  <link rel="icon" type="image/png" href="/assets/favicon.jpg" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"></script>
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
+                <a class="navbar-brand" href="/Paginas/Empresa/indexEmpresa.html"> <img src="/assets/Logo/motogo2.png" class="navbar-logo"> </a>
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -148,7 +148,7 @@
                     </div>
                     <div class="card-body">
                      
-                        <div class="card-body card-padre-vehiculo"   style="display:none;">
+                        <div class="card-body card-padre-vehiculo">
                             <!-- CARDS -->
                             <div class="row row-cols-3">
                                                                                              
@@ -546,7 +546,7 @@
 
 
 
-                  <div class="container editarMoto" > <!--style="display: none;"-->
+                  <div class="container editarMoto" style="display: none;" > <!---->
                     <div class="row">
                         <div class="col-md-4 ">
                             <table class="table table-borderless mb-0">
@@ -688,6 +688,147 @@
                     </div>
                 </div>    
                 
+                 <div class="container editarMotoNueva" style="display: none;"> <!---->
+                    <div class="row">
+                        <div class="col-md-4 ">
+                            <table class="table table-borderless mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="editarVehiculo">Marca:</td>
+                                        <td>
+                                            <select id="" class="form-control">
+                                                <option value="" selected hidden>Seleccionar</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Estilo:</td>
+                                        <td>
+                                            <select id="" class="form-control">
+                                                <option value="" selected hidden>Seleccionar</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Cilindraje:</td>
+                                        <td>
+                                            <select id="" class="form-control">
+                                                <option value="" selected hidden>Mas proximo</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Motor:</td>
+                                        <td>
+                                            <select id="" class="form-control">
+                                                <option value="" selected hidden>Seleccionar</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Kilometraje:</td>
+                                        <td>
+                                            <input type="text" id="" class="form-control" placeholder="Insertar">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Color:</td>
+                                        <td>
+                                            <input type="text" id="" class="form-control" placeholder="Insertar">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Año:</td>
+                                        <td>
+                                            <input type="text" id="" class="form-control" placeholder="Insertar">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Arranque:</td>
+                                        <td>
+                                            <select id="" class="form-control">
+                                                <option value="" selected hidden>Seleccionar</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Alimentacion:</td>
+                                        <td>
+                                            <select id="" class="form-control">
+                                                <option value="" selected hidden>Seleccionar</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="editarVehiculo" >Placa:</td>
+                                        <td>
+                                            <select id="" class="form-control">
+                                                <option value="" selected hidden>Seleccionar</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="mb-4">
+                                        <td class="text-start align-middle">
+                                            <a href="" class="informacion-vehiculo cancelar-edicion">Cancelar</a>
+                                        </td>
+                                        <td class="text-start">
+                                            <button type="submit" class="btn btn-primary boton-reserva">Guardar</button>
+                                        </td>
+                                    </tr>                                                                                
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-3">
+                            <table class="table table-borderless">
+                
+                                <tbody>
+                                  <!-- Agrega filas según sea necesario -->
+                                  <tr>
+                                    <td class="editarVehiculo">Estado:</td>
+                                    <td> <select id="" class="form-control">
+                                      <option value="" selected hidden>Seleccionar</option>
+                                      <option value="activo">Activo</option>
+                                      <option value="inactivo">Inactivo</option>
+                                  </select> </td>
+              
+                                  </tr>
+                                  <tr>
+                                    <td class="editarVehiculo"> Imagen:</td>
+                                    <td> <select id="" class="form-control">
+                                      <option value="" selected hidden>Seleccionar</option>
+                                      <option value="activo">Abierto</option>
+                                      <option value="inactivo">Cerrado</option>
+                                  </select></td>
+              
+                                  </tr>
+                                  <!-- Agrega más filas según sea necesario -->
+
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="col-md-4 align-self-start">
+                            <!-- Contenido de la tercera columna -->
+                            <img src="/assets/img/placeholder.png" class="card-img-top imagen-vehiculo" alt="Error cargando imagen">
+                            <p class="actividadSede text-center" style="font-size: 20px; font-weight: bold; margin-bottom: 0;">Nombre de la moto</p>
+                            <a href="" class="informacion-vehiculo d-flex justify-content-center">Editar nombre</a>
+                        </div>
+                    </div>
+                </div>    
                 
 
 

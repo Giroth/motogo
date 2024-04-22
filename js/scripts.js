@@ -100,6 +100,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Escuchar el evento click en el botón "Nuevo Vehículo"
+    var botonNuevoVehiculo = document.querySelector('.botonNuevoVehiculo');
+    botonNuevoVehiculo.addEventListener('click', function() {
+        // Ocultar el contenedor .card-padre-vehiculo
+        var contenedorPadreVehiculo = document.querySelector('.card-padre-vehiculo');
+        contenedorPadreVehiculo.style.display = 'none';
+
+        // Mostrar el contenedor .editarMotoNueva correspondiente
+        var editarMotoNueva = document.querySelector('.editarMotoNueva');
+        editarMotoNueva.style.display = 'block';
+
+        // Ocultar el botón "Nuevo Vehículo"
+        botonNuevoVehiculo.style.display = 'none';
+
+        // Cambiar el texto de .titulo-sedes por "Motocicleta ID: <span></span>"
+        var tituloSedes = document.querySelector('.titulo-sedes');
+        tituloSedes.innerHTML = 'Motocicleta ID: <span></span>';
+
+        // Cambiar la dirección de la imagen
+        var imagenVehiculo = document.querySelector('.editarMotoNueva .imagen-vehiculo');
+        imagenVehiculo.src = "/assets/img/placeholder.png"; // Reemplaza "/ruta/a/la/nueva/imagen.jpg" con la nueva dirección de la imagen
+    });
+});
+
 
 
 window.addEventListener('DOMContentLoaded', event => {
@@ -209,6 +234,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var botonCancelar = document.querySelector(".editarInfoCancelar");
     var etiquetasInfo2 = document.querySelectorAll(".etiquetasInfo2");
     var editarMiInfoInputs = document.querySelectorAll(".editarMiInfo");
+    var editarInfoGuardar = document.querySelector(".editarInfoGuardar"); // Selecciona un elemento específico
 
     // Guardar estilos originales de etiquetasInfo2
     var estilosOriginalesEtiquetasInfo2 = [];
@@ -233,6 +259,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Mostrar botón Cancelar
         botonCancelar.style.display = "inline-block";
+        editarInfoGuardar.style.display = "inline-block";
 
         // Ocultar botón Editar
         botonEditar.style.display = "none";
@@ -251,11 +278,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Ocultar botón Cancelar
         botonCancelar.style.display = "none";
-
+        editarInfoGuardar.style.display = "none";
         // Mostrar botón Editar
         botonEditar.style.display = "inline-block";
     });
 });
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const informacionVyS = document.querySelector('.informacionVyS');

@@ -11815,10 +11815,15 @@ color: #000;
 
 }
 
-.editarInfo, .editarInfoCancelar{
+.editarInfo, .editarInfoCancelar, .editarInfoGuardar{
   background-color: #FF7F50;
   border-color: #FF7F50;
   
+}
+
+.editarInfoGuardar{
+margin-left: 50px;  
+
 }
 
 .cartaMiInfo{
